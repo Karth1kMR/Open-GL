@@ -40,16 +40,6 @@ void cir(int a,int b,int x,int y,int r)
      }
      glEnd();
 }
-void lines()
-{
-    glBegin(GL_LINES);
-    glVertex2i(200,1000);
-    glVertex2i(200,0);
-    glVertex2i(1000,400);
-    glVertex2i(0,400);
-    glEnd();
-}
-
 void display()
 {
      glClear(GL_COLOR_BUFFER_BIT);
@@ -67,19 +57,16 @@ void display()
      oval(0,360,620,470,55,80);//eye-right
      glColor3f(1,1,1);
      oval(0,360,620,450,30,60);//eyeball-right
-      glColor3f(1,1,1);
-     
-     //glColor3f(1,1,1);
-     //lines();
+     glColor3f(1,1,1);
      glFlush();
 }
 int main(int argc,char **argv)
 {
     glutInit(&argc,argv);
     glutInitDisplayMode(GLUT_SINGLE);
-	glutInitWindowSize(600,600);
-	glutCreateWindow("mickey");
+    glutInitWindowSize(600,600);
+    glutCreateWindow("mickey");
     init();
-	glutDisplayFunc(display);
-	glutMainLoop();
+    glutDisplayFunc(display);
+    glutMainLoop();
 }
