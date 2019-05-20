@@ -5,7 +5,7 @@ void init()
     glClearColor(0,0,0,1);
     gluOrtho2D(0,600,0,600);
 }
-void lines()
+/*void lines()
 {
     glBegin(GL_LINES);
     glVertex2i(200,600);
@@ -13,7 +13,7 @@ void lines()
     glVertex2i(600,200);
     glVertex2i(0,200);
     glEnd();
-}
+}*/
 void box1()
 {
     glBegin(GL_POLYGON);
