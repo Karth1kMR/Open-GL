@@ -46,15 +46,15 @@ void display()
 }
 int main(int argc,char **argv)
 {
-    glutInit(&argc,argv);
-    printf("Enter the radius\n");
-    scanf("%f",&r);
-    printf("Enter the center values\n");
-    scanf("%d%d",&xc,&yc);
-    glutInitDisplayMode(GLUT_SINGLE);
+    	glutInit(&argc,argv);
+    	printf("Enter the radius\n");
+    	scanf("%f",&r);
+    	printf("Enter the center values\n");
+    	scanf("%d%d",&xc,&yc);
+   	glutInitDisplayMode(GLUT_SINGLE);
 	glutInitWindowSize(600,600);
 	glutCreateWindow("mid");
-    init();
+    	init();
 	glutDisplayFunc(display);
 	glutMainLoop();
 }
