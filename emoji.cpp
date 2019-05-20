@@ -72,11 +72,11 @@ void display()
 }
 int main(int argc,char **argv)
 {
-    glutInit(&argc,argv);
-    glutInitDisplayMode(GLUT_SINGLE);
+    	glutInit(&argc,argv);
+    	glutInitDisplayMode(GLUT_SINGLE);
 	glutInitWindowSize(600,600);
 	glutCreateWindow("emoji");
-    init();
+    	init();
 	glutDisplayFunc(display);
 	glutMainLoop();
 }
